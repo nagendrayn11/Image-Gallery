@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamScape | Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Dream<span>Scape.</span></a>
+        <p>Explore the beauty of the world</p>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <p class="tagline">A WORLD OF INSPIRATION</p>
+            <h1>Discover Beautiful <span>Moments</span></h1>
+            <p class="subtitle">
+                A collection of beautiful photographs from around the world.
+            </p>
+        </section>
+
+        <nav class="filters" aria-label="Filter gallery">
+            <button class="filter-btn active" data-filter="all">All Photos</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="travel">Travel</button>
+            <button class="filter-btn" data-filter="city">City</button>
+            <button class="filter-btn" data-filter="flowers">Flowers</button>
+        </nav>
+
+        <section class="gallery" id="gallery">
+
+            <article class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=85"
+                     alt="Beautiful mountain lake" loading="lazy">
+                <div class="image-info">
+                    <h3>Mountain Escape</h3>
+                    <p>Nature</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="travel">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85"
+                     alt="Tropical beach and ocean" loading="lazy">
+                <div class="image-info">
+                    <h3>Ocean Paradise</h3>
+                    <p>Travel</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="city">
+                <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=900&q=85"
+                     alt="City skyline at night" loading="lazy">
+                <div class="image-info">
+                    <h3>City Lights</h3>
+                    <p>City</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="flowers">
+                <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=85"
+                     alt="Colorful flowers" loading="lazy">
+                <div class="image-info">
+                    <h3>Spring Bloom</h3>
+                    <p>Flowers</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=85"
+                     alt="Sunlight in a green forest" loading="lazy">
+                <div class="image-info">
+                    <h3>Green Forest</h3>
+                    <p>Nature</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="travel">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85"
+                     alt="Snow-covered mountain peaks" loading="lazy">
+                <div class="image-info">
+                    <h3>Mountain Adventure</h3>
+                    <p>Travel</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="city">
+                <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&q=85"
+                     alt="Modern architectural building" loading="lazy">
+                <div class="image-info">
+                    <h3>Modern Design</h3>
+                    <p>City</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="flowers">
+                <img src="https://images.unsplash.com/photo-1494625927555-6ec4433b1571?auto=format&fit=crop&w=900&q=85"
+                     alt="Beautiful flower garden" loading="lazy">
+                <div class="image-info">
+                    <h3>Floral Dreams</h3>
+                    <p>Flowers</p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Full-screen image viewer -->
+    <div class="lightbox" id="lightbox" role="dialog"
+         aria-modal="true" aria-label="Image viewer" hidden>
+        <button class="close-btn" id="closeBtn"
+                aria-label="Close image viewer">&times;</button>
+
+        <button class="nav-btn prev-btn" id="prevBtn"
+                aria-label="Previous image">&#10094;</button>
+
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="">
+            <h3 id="lightboxTitle"></h3>
+            <p id="lightboxCategory"></p>
+            <p class="image-count" id="imageCount"></p>
+        </div>
+
+        <button class="nav-btn next-btn" id="nextBtn"
+                aria-label="Next image">&#10095;</button>
+    </div>
+
+    <footer>
+        <p>Made with <span>♥</span> by NAGENDRA</p>
+        <p class="footer-small">DreamScape Image Gallery | 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
